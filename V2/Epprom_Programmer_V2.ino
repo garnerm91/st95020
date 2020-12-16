@@ -39,6 +39,7 @@ uint8_t readByteAt(uint8_t cs, uint16_t adr)
 //end
 
 // start of SPI write
+//uint8_t writeByteAt(uint8_t cs, uint16_t adr, char d)
 uint8_t writeByteAt(uint8_t cs, uint16_t adr, char d)
 {
   SPI.beginTransaction(SPISettings(4000000, MSBFIRST, SPI_MODE0));
